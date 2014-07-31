@@ -1,7 +1,7 @@
 fluent-reflection
 =================
 
-This is a fluent style reflection library, it makes Java reflection very simple to use and it's succintness heavily reduces code clutter. It improves on Java reflection by explicitly modeling Annotations so that annotation reflection code is more obvious.
+This is a fluent style reflection library, it makes Java reflection very simple to use and it's brevity heavily reduces code clutter. It improves on Java reflection by explicitly modeling Annotations so that annotation reflection code is more obvious.
 
 The library evolved out of work on another project which required fairly complex reflection usage. As such the fluent library does not offer all of the reflection functionality, it will be further developed as needs arise.
 
@@ -16,7 +16,7 @@ This code snippet gets the type of the state value from the "OnEvent" annotation
 					.annotationProperties().named("state").type();
 ```					
 
-This code gets all the methods on the RestService class which are annotated with OnEvent.
+This code gets all the methods on the RestService class which are annotated with OnEvent and makes them accessible to invoke
 
 ```java
 			List<Method> methods =
